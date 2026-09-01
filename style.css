@@ -1,76 +1,56 @@
-:root {
-  --azul-oscuro: #1f3350;
-  --azul-claro: #4a90d9;
-  --gris-seccion: #8a97a3;
-  --gris-claro: #f2f4f6;
-  --verde-boton: #3fae5a;
-  --texto: #232a33;
-  --borde: #c9d1d9;
-}
-
-* {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
-  font-family: "Segoe UI", Arial, sans-serif;
-  color: var(--texto);
+  font-family: Arial, sans-serif;
+  color: #000000;
   background: #ffffff;
 }
 
 /* Encabezado */
 .site-header {
-  background: var(--azul-oscuro);
+  background: #1f3350;
   color: #ffffff;
   text-align: center;
-  padding: 28px 16px 20px;
+  padding: 20px 10px;
 }
 
 .site-header h1 {
-  margin: 0 0 6px;
-  font-size: 1.6rem;
-  letter-spacing: 0.5px;
+  margin: 0 0 4px;
+  font-size: 1.4rem;
 }
 
 .site-header .tagline {
   margin: 0;
   font-size: 0.85rem;
-  opacity: 0.75;
 }
 
 /* Navegación */
 .main-nav {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  text-align: center;
   background: #ffffff;
-  border-bottom: 1px solid var(--borde);
-  padding: 12px 16px;
+  border: 1px solid #000000;
+  border-top: none;
+  padding: 10px;
 }
 
 .main-nav a {
-  color: var(--texto);
+  color: #000000;
   text-decoration: none;
   font-size: 0.9rem;
-  margin: 0 11px;
-}
-
-.main-nav a:hover {
-  text-decoration: underline;
+  margin: 0 10px;
 }
 
 .main-nav .nav-login {
-  font-weight: 600;
-  color: var(--azul-oscuro);
+  font-weight: bold;
 }
 
 /* Banner */
 .banner {
-  background: var(--azul-claro);
+  background: #4a90d9;
   color: #ffffff;
   text-align: center;
-  padding: 22px 16px;
+  padding: 18px 10px;
+  border: 1px solid #000000;
+  border-top: none;
 }
 
 .banner p {
@@ -79,19 +59,19 @@ body {
 
 /* Secciones / módulos */
 .module {
-  max-width: 1000px;
+  max-width: 950px;
   margin: 0 auto;
-  padding: 28px 16px;
+  padding: 20px 10px;
 }
 
 .section-title {
-  background: var(--gris-seccion);
+  background: #8a97a3;
   color: #ffffff;
   text-align: center;
-  padding: 10px;
-  margin: 0 0 20px;
+  padding: 8px;
+  margin: 0 0 15px;
   font-size: 1rem;
-  border-radius: 4px;
+  border: 1px solid #000000;
 }
 
 .two-col,
@@ -103,18 +83,17 @@ body {
 
 .two-col .card {
   width: 48%;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .three-col .card {
   width: 31%;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .card {
-  border: 1px solid var(--borde);
-  border-radius: 6px;
-  padding: 20px;
+  border: 1px solid #000000;
+  padding: 15px;
   background: #ffffff;
   box-sizing: border-box;
 }
@@ -122,51 +101,43 @@ body {
 .card h3 {
   margin-top: 0;
   text-align: center;
-  font-size: 1.05rem;
+  font-size: 1rem;
 }
 
 /* Formulario de login */
 .card form label {
   display: block;
   font-size: 0.8rem;
-  margin: 12px 0 4px;
-  color: #55606a;
+  margin: 10px 0 3px;
 }
 
 .card form input {
   width: 100%;
-  padding: 10px;
-  border: 1px solid var(--borde);
-  border-radius: 4px;
+  padding: 8px;
+  border: 1px solid #000000;
   font-size: 0.9rem;
+  box-sizing: border-box;
 }
 
 .btn-ingresar {
   width: 100%;
-  margin-top: 18px;
-  padding: 12px;
-  background: var(--verde-boton);
+  margin-top: 15px;
+  padding: 10px;
+  background: #3fae5a;
   color: #ffffff;
-  border: none;
-  border-radius: 4px;
-  font-weight: 600;
+  border: 1px solid #000000;
+  font-weight: bold;
   font-size: 0.95rem;
-  cursor: pointer;
-}
-
-.btn-ingresar:hover {
-  filter: brightness(0.95);
 }
 
 .small-links {
   text-align: center;
   font-size: 0.8rem;
-  margin-top: 12px;
+  margin-top: 10px;
 }
 
 .small-links a {
-  color: var(--azul-claro);
-  text-decoration: none;
+  color: #000000;
 }
 
 /* Pasos de matrícula */
@@ -176,49 +147,41 @@ body {
 }
 
 .steps li {
-  padding: 8px 0;
-  border-bottom: 1px solid var(--gris-claro);
-}
-
-.steps li:last-child {
-  border-bottom: none;
+  padding: 6px 0;
 }
 
 /* Tarjetas informativas */
 .three-col .card p {
   font-size: 0.85rem;
-  color: #55606a;
   text-align: center;
-  margin: 8px 0 0;
+  margin: 6px 0 0;
 }
 
 /* Barra de ayuda */
 .faq-bar {
-  background: var(--gris-claro);
+  background: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 12px 10px;
   font-size: 0.9rem;
-  border-top: 1px solid var(--borde);
-  border-bottom: 1px solid var(--borde);
+  border: 1px solid #000000;
 }
 
 /* Pie de página */
 .site-footer {
-  background: var(--azul-oscuro);
+  background: #1f3350;
   color: #ffffff;
   text-align: center;
-  padding: 26px 16px;
+  padding: 20px 10px;
 }
 
 .site-footer h3 {
-  margin: 0 0 14px;
+  margin: 0 0 10px;
   font-size: 1rem;
 }
 
 .site-footer p {
-  margin: 6px 0;
+  margin: 5px 0;
   font-size: 0.85rem;
-  opacity: 0.9;
 }
 
 .site-footer a {
@@ -226,9 +189,8 @@ body {
 }
 
 .site-footer .copyright {
-  margin-top: 16px;
+  margin-top: 12px;
   font-size: 0.75rem;
-  opacity: 0.7;
 }
 
 /* Responsive */
@@ -236,9 +198,5 @@ body {
   .two-col .card,
   .three-col .card {
     width: 100%;
-  }
-
-  .main-nav a {
-    margin: 0 8px 8px;
   }
 }
